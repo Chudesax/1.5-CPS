@@ -35,13 +35,12 @@ body {
   font-family: "TT Lakes", sans-serif, serif;
 }
 
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
 .header {
   background-color: #f8f8f8;
+}
+.header__container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 .header__title {
   color: #7E7E82;
@@ -51,6 +50,10 @@ body {
 
 .brands {
   background: #efefef;
+}
+.brands__container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 .brands__list {
   display: grid;
@@ -73,7 +76,7 @@ body {
   padding: 0 16px;
 }
 .brands__btn:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
 }
 .brands__more {
   display: flex;
@@ -116,4 +119,8 @@ body {
   width: 16px;
   height: 16px;
   margin-right: 20px;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
