@@ -1,15 +1,10 @@
-const toggleButton = document.querySelector('.brands__show');
-const hiddenItems = document.querySelectorAll('.brands__item.hidden');
+let btnShow = document.querySelector('.brands__show');
 
-toggleButton.addEventListener('click', () => {
-    hiddenItems.forEach(item => {
-        item.classList.toggle('hidden'); // Переключаем класс hidden
-    });
-
-    // Изменяем текст кнопки в зависимости от состояния
-    if (toggleButton.textContent === 'Показать всё') {
-        toggleButton.textContent = 'Скрыть';
+btnShow.onclick = function () {
+    // Проверяем содержимое текста кнопки
+    if (btnShow.textContent == 'Показать все') {
+        btnShow.textContent = 'Скрыть';
     } else {
-        toggleButton.textContent = 'Показать все';
+        btnShow.textContent = 'Показать все';
     }
-});
+};

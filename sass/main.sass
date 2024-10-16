@@ -1,6 +1,6 @@
 @import '_variables.sass'
-@import '_media.sass'
 @import '_fonts.sass'
+
 body
 	font-family: "TT Lakes", sans-serif, serif
 
@@ -20,7 +20,7 @@ body
 		margin: 0 auto
 	&__list
 		display: grid
-		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+		grid-template-columns: repeat(auto-fit, minmax(224px, 1fr))
 		row-gap: 16px
 		column-gap: 32px
 		padding: 24px 32px
@@ -53,17 +53,17 @@ body
 		background-repeat: no-repeat
 		background-position: center
 		background-size: contain
-	&__show
+	&__show, &__hide
 		display: flex
 		justify-content: center
 		align-items: center
 		color: #1B1C21
 		font-weight: 500
 		padding: 24px 32px
-	&__show:hover
+	&__show:hover, &__hide:hover
 		color: #8b8a8a
 		transition: 0.5s
-	&__show::before
+	&__show::before, &__hide::before
 		content: ''
 		display: inline-block
 		background: url('../icons/arrows.svg')
@@ -75,3 +75,5 @@ body
 		margin-right: 20px
 .hidden
 	display: none
+
+@import '_media.sass'
