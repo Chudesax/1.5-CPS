@@ -6,6 +6,7 @@ body
 
 .header
 	background-color: #f8f8f8
+	border-top: 1px solid $teal
 	&__container
 		max-width: 1140px
 		margin: 0 auto
@@ -53,17 +54,17 @@ body
 		background-repeat: no-repeat
 		background-position: center
 		background-size: contain
-	&__show, &__hide
+	&__show
 		display: flex
 		justify-content: center
 		align-items: center
 		color: #1B1C21
 		font-weight: 500
 		padding: 24px 32px
-	&__show:hover, &__hide:hover
+	&__show:hover
 		color: #8b8a8a
 		transition: 0.5s
-	&__show::before, &__hide::before
+	&__show::before
 		content: ''
 		display: inline-block
 		background: url('../icons/arrows.svg')
@@ -73,7 +74,21 @@ body
 		width: 16px
 		height: 16px
 		margin-right: 20px
+		transition: 0.3s
 .hidden
 	display: none
+
+.arrows-up::before
+	content: ''
+	display: inline-block
+	transform: rotate(180deg)
+	background: url('../icons/arrows.svg')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: contain
+	width: 16px
+	height: 16px
+	margin-right: 20px
+	transition: 0.3s
 
 @import '_media.sass'

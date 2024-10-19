@@ -22,6 +22,7 @@ body {
 
 .header {
   background-color: #f8f8f8;
+  border-top: 1px solid #D9FFF5;
 }
 .header__container {
   max-width: 1140px;
@@ -82,7 +83,7 @@ body {
   background-position: center;
   background-size: contain;
 }
-.brands__show, .brands__hide {
+.brands__show {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,11 +91,11 @@ body {
   font-weight: 500;
   padding: 24px 32px;
 }
-.brands__show:hover, .brands__hide:hover {
+.brands__show:hover {
   color: #8b8a8a;
   transition: 0.5s;
 }
-.brands__show::before, .brands__hide::before {
+.brands__show::before {
   content: "";
   display: inline-block;
   background: url("../icons/arrows.svg");
@@ -104,10 +105,25 @@ body {
   width: 16px;
   height: 16px;
   margin-right: 20px;
+  transition: 0.3s;
 }
 
 .hidden {
   display: none;
+}
+
+.arrows-up::before {
+  content: "";
+  display: inline-block;
+  transform: rotate(180deg);
+  background: url("../icons/arrows.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  margin-right: 20px;
+  transition: 0.3s;
 }
 
 @media (min-width: 768px) and (max-width: 1139px) {
