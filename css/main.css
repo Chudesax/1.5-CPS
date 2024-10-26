@@ -22,7 +22,6 @@ body {
 
 .header {
   background-color: #f8f8f8;
-  border-top: 1px solid #D9FFF5;
 }
 .header__container {
   max-width: 1140px;
@@ -108,15 +107,11 @@ body {
   transition: 0.3s;
 }
 
-.hidden {
-  display: none;
-}
-
 .arrows-up::before {
   content: "";
   display: inline-block;
-  transform: rotate(180deg);
   background: url("../icons/arrows.svg");
+  transform: rotate(180deg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -124,6 +119,15 @@ body {
   height: 16px;
   margin-right: 20px;
   transition: 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+
+.swiper {
+  width: 240px;
+  height: 300px;
 }
 
 @media (min-width: 768px) and (max-width: 1139px) {

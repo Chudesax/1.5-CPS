@@ -6,7 +6,6 @@ body
 
 .header
 	background-color: #f8f8f8
-	border-top: 1px solid $teal
 	&__container
 		max-width: 1140px
 		margin: 0 auto
@@ -75,14 +74,11 @@ body
 		height: 16px
 		margin-right: 20px
 		transition: 0.3s
-.hidden
-	display: none
-
 .arrows-up::before
 	content: ''
 	display: inline-block
-	transform: rotate(180deg)
 	background: url('../icons/arrows.svg')
+	transform: rotate(180deg)
 	background-repeat: no-repeat
 	background-position: center
 	background-size: contain
@@ -90,5 +86,11 @@ body
 	height: 16px
 	margin-right: 20px
 	transition: 0.3s
+.hidden
+	display: none
+
+.swiper
+	width: 240px
+	height: 300px
 
 @import '_media.sass'
