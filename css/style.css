@@ -147,38 +147,57 @@ body {
 		padding-left: 16px;
 		padding-bottom: 16px;
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		gap: 24px;
 		transition: 5s;
 	}
 
+	/* .brands__item:nth-child(6+n) {
+		display: none;
+	} */
 
-	button.show-more {
-		width: 180px;
-		height: 52px;
-		font-weight: 500;
-		font-size: 16px;
-		color: #1B1C21;
-		padding: 4px 0 0 24px;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
+	.btn__container {
+		max-width: 1139px;
 	}
 
-	button.show-more::before {
+	.btn__action {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		width: 200px;
+		height: 56px;
+		color: #1B1C21;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	.btn__action::before {
 		content: "";
 		display: block;
 		width: 16px;
 		height: 16px;
+		padding: 0 16px 0 34px;
 		background: url("../icons/arrows.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
+		transition: 0.3s;
 	}
 
-	.brands__item--mod {
-		display: none;
+	.arrows__up::before {
+		content: "";
+		display: block;
+		width: 16px;
+		height: 16px;
+		padding: 0 16px 0 34px;
+		transform: rotate(180deg);
+		background: url("../icons/arrows.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		transition: 0.3s;
 	}
+
 
 }
 
@@ -220,32 +239,47 @@ body {
 		gap: 24px;
 	}
 
-
 	.btn__container {
-		max-width: 1139px;
+		width: 1140px;
 		margin: 0 auto;
 	}
 
-	.btn__show {
-		width: 180px;
-		height: 52px;
-		padding: 4px 0 0 24px;
+	.btn__action {
 		display: flex;
-		justify-content: space-around;
+		justify-content: flex-start;
 		align-items: center;
-	}
-
-	.btn__more {
-		display: block;
-		font-weight: 500;
-		font-size: 18px;
+		width: 200px;
+		height: 56px;
 		color: #1B1C21;
+		font-size: 16px;
+		font-weight: 500;
 	}
 
-	.btn__img {
+	.btn__action::before {
+		content: "";
+		display: block;
 		width: 16px;
 		height: 16px;
-		/* transform: rotate(180deg); */
+		padding: 0 16px 0 34px;
+		background: url("../icons/arrows.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	.arrows__up::before {
+		content: "";
+		display: block;
+		width: 16px;
+		height: 16px;
+		padding: 0 16px 0 34px;
+		transform: rotate(180deg);
+		background: url("../icons/arrows.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		transition: 0.3s;
 	}
 
 

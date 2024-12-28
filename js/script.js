@@ -1,35 +1,23 @@
-let actionButton = document.querySelector('.btn__show');
-console.log(actionButton);
-let list = document.querySelectorAll('.brands__item--mod');
+let actionButton = document.querySelector('.btn__action');
+let list = document.querySelectorAll('.card:nth-child(n+9)')
 console.log(list);
-let listPc = document.querySelectorAll('.brands__item--pc');
 
 actionButton.addEventListener('click', function () {
-  if (window.innerWidth < 1138) {
     if (actionButton.textContent === 'Показать всё') {
       actionButton.textContent = 'Скрыть';
     } else {
       actionButton.textContent = 'Показать всё';
     };
+
+    if (actionButton.textContent === 'Скрыть') {
+      actionButton.classList.add('arrows__up');
+    } else {
+      actionButton.classList.remove('arrows__up');
+    }
 
     for (let i = 0; i < list.length; i++) {
       list[i].classList.toggle('hidden')
     }
-  }
-});
-
-actionButton.addEventListener('click', function () {
-  if (window.innerWidth > 1139) {
-    if (actionButton.textContent === 'Показать всё') {
-      actionButton.textContent = 'Скрыть';
-    } else {
-      actionButton.textContent = 'Показать всё';
-    };
-
-    for (let i = 0; i < list.length; i++) {
-      listPC[i].classList.toggle('hidden')
-    }
-  }
 });
 
 
