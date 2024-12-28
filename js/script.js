@@ -6,19 +6,24 @@ console.log(list.length);
 
 function updateVisibility() {
   for (let i = 0; i < list.length; i++) {
-    if (window.innerWidth > 1140) {
+    if (window.innerWidth > 1138) {
 
       if (i >= 8) {
         list[i].classList.add('hidden');
+        actionButton.textContent = 'Показать всё';
       } else {
         list[i].classList.remove('hidden');
+        actionButton.textContent = 'Скрыть';
+        
       }
     } else if (window.innerWidth > 768 && window.innerWidth < 1139) {
 
       if (i >= 6) {
         list[i].classList.add('hidden');
+        actionButton.textContent = 'Показать всё';
       } else {
         list[i].classList.remove('hidden');
+        actionButton.textContent = 'Скрыть';
       }
     } else {
 
@@ -44,9 +49,9 @@ actionButton.addEventListener('click', function () {
   }
 
   for (let i = 0; i < list.length; i++) {
-    if (i >= 8 && list[i].classList.contains('hidden')) {
-      
+    if (i >= 8 && list[i].classList.contains('hidden')) {    
       list[i].classList.remove('hidden');
+
     } else if (i >= 8 && !list[i].classList.contains('hidden')) {
       
       list[i].classList.add('hidden');
@@ -80,7 +85,7 @@ const swiperActivator = function () {
     }
   } else {
     swiper.destroy(true, true);
-/*     swiper = null; */
+    swiper = null; 
   }
 
 };

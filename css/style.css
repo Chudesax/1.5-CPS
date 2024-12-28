@@ -26,6 +26,7 @@ body {
 
 .header {
 	min-width: 320px;
+	height: 56px;
 	border-top: 2px solid #D9FFF5;
 	margin: 0 auto;
 	background: #f8f8f8;
@@ -204,11 +205,11 @@ body {
 	}
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1139px) {
 
 	.header {
 		padding-top: 2px;
-		max-width: 1140px;
+		max-width: 1139px;
 		height: 56px;
 		border-top: 2px solid #D9FFF5;
 		margin: 0 auto;
@@ -228,12 +229,12 @@ body {
 
 	.brands,
 	.swiper {
-		min-width: 1140px;
+		min-width: 1139px;
 		min-height: 200px;
 	}
 
 	.brands__list {
-		max-width: 1140px;
+		max-width: 1139px;
 		margin: 0 auto;
 		padding-top: 16px;
 		padding-left: 16px;
